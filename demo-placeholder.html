@@ -1,0 +1,33 @@
+<!Doctype html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<style type="text/css">
+				*{padding: 0;margin:0;}
+				.main{
+					width:200px;
+					height: 200px;
+					background: #ff0;
+					border: 5px solid #ddd;
+				}
+				.ipt-txt{
+					width:200px;
+					height:30px;
+					line-height:30px;
+					padding: 2px;
+					border: 1px solid #ddd;
+				}
+			</style>
+		</head>
+		<body>	
+			<input type="text" class="ipt-text" placeholder="请输入字符...">
+			
+			<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+			<script type="text/javascript" src="jquery.placeholder.js"></script>
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$(".ipt-text").placeholder();
+				});
+			</script>
+		</body>
+	</html>
