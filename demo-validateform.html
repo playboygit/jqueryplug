@@ -1,0 +1,45 @@
+<!Doctype html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<link href="validateform.css" rel="stylesheet">
+			<style type="text/css">
+				*{padding: 0;margin:0;}
+				.main{
+					width:200px;
+					height: 200px;
+					background: #ff0;
+					border: 5px solid #ddd;
+				}
+				.ipt-text{
+					width:200px;
+					height:20px;
+					line-height:20px;
+					padding: 2px;
+					border: 1px solid #ccc;
+				}
+				div{margin-top: 5px;}
+				.submit{padding: 5px 10px;font-size: 14px;}
+			</style>
+		</head>
+		<body>	
+			<form action="" method="post" id="myform">
+				<div>请输入昵称：<input type="text" class="ipt-text" require maxLengths="10" minLengths="5"></div>
+				<div>请输入字符：<input type="text" class="ipt-text" require minLengths="5"></div>
+				<div>请输入昵称：<input type="text" class="ipt-text" require maxLengths="10"></div>
+				<div>请输入数字：<input type="text" class="ipt-text" data-type="number" require maxLengths="10"></div>
+				<div>请输入汉字：<input type="text" class="ipt-text" data-type="zh" require maxLengths="10"></div>
+				<div>请输入英文：<input type="text" class="ipt-text" data-type="en" require maxLengths="10"></div>
+				<div>请输入邮箱：<input type="text" class="ipt-text" data-type="email" require mixLengths="6" maxLengths="20"></div>
+				<input class="submit" type="submit" value="提交">
+			</form>
+			
+			<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+			<script type="text/javascript" src="jquery.validateform.js"></script>
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$("#myform").validateform();
+				});
+			</script>
+		</body>
+	</html>
