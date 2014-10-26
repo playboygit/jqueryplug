@@ -1,0 +1,29 @@
+<!Doctype html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<style type="text/css">
+				*{padding: 0;margin:0;}
+				.main{
+					width:200px;
+					height: 200px;
+					background: #ff0;
+					border: 5px solid #ddd;
+				}
+			</style>
+		</head>
+		<body>	
+			
+			<div class="main" id="main">
+				拖动我试试看！
+			</div>
+			
+			<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+			<script type="text/javascript" src="jquery.dragger.js"></script>
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$("#main").dragger(true);
+				});
+			</script>
+		</body>
+	</html>
