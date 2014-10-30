@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<link type="text/css" rel="stylesheet" href="calendar.css" />
+</head>
+
+<body>
+
+<h1>
+	日历
+</h1>
+
+<!-- 格式化参数
+
+	─────────────────
+		字段		标准		缩写
+	─────────────────
+		年		YYYY
+		月		MM		M
+		日		DD		D
+		时		hh		h
+		分		mm		m
+		秒		ss		s
+	─────────────────
+
+-->
+
+日期：<input type="text" calendar="YYYY-MM-DD hh:mm" /><br />
+字段：<input type="text" />
+
+<!-- 脚本 -->
+<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="jquery.calendar.js"></script>
+
+</body>
+</html>
